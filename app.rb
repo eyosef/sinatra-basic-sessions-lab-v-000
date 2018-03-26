@@ -16,7 +16,6 @@ class App < Sinatra::Base
     session[:item] = params[:item]
     @session = session
     redirect to ('/index')
-    binding.pry
   end
 
 end
