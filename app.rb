@@ -15,6 +15,7 @@ class App < Sinatra::Base
   post '/checkout' do
     session[:item] = params[:item]
     @session = session
+    session[:message] = "Shopping cart contents include #{params[:item]}."
     redirect to ('/index')
   end
 
