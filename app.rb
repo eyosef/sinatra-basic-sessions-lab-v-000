@@ -16,6 +16,8 @@ class App < Sinatra::Base
     session[:item] = params[:item]
     @session = session
     redirect to ('/index')
+
+    erb ':checkout'
   end
 
 end
