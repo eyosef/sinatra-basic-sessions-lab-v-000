@@ -15,6 +15,7 @@ class App < Sinatra::Base
   post '/checkout' do
     session[:item] = params[:item]
     @session = session
+    redirect to ('/index')
     binding.pry
   end
 
